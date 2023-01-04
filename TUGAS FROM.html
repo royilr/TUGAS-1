@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css.css">
+		<title>Biodata Siswa</title>
+	</head>
+	  <body>
+		<header>
+		 <h1>BIODATA</h1>
+      <h1>SISWA KELAS XII MM</h1>
+      <h1>SMK NEGERI 2 PURWOKERTO</h1>
+      <h1>TAHUN AJARAN 2022/2023</h1>
+		</header>
+		   <main>
+      <form method="post">
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="NIS">NIS<span style="color: rgb(71, 53, 230);">*</span></label>
+          </div>
+          <div class="inputan">
+            <input type="number" required class="inp" id="NIS" placeholder="NIS">
+          </div>
+      </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="NAMA">NAMA<span style="color: rgb(71, 53, 230);">*</span></label>
+          </div>
+          <div class="inputan">
+            <input type="text" required class="inp" id="NAMA" placeholder="Masukan Nama Anda">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="text">
+            <label for="TEMPAT-LAHIR">TEMPAT LAHIR</label>
+          </div>
+          <div class="inputan">
+            <input type="text" class="inp" id="TEMPAT-LAHIR" placeholder="Tempat Lahir">
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="TANGGAL-LAHIR">TANGGAL LAHIR</label>
+          </div>
+          <div class="inputan">
+            <input type="date" class="inp" id="TANGGAL-LAHIR">
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="AGAMA">AGAMA</label>
+          </div>
+          <div class="inputan">
+              <select id="AGAMA" class="inp">
+              <option>Islam</option>
+              <option>Kristen</option>
+              <option>Hindu</option>
+              <option>Katolik</option>
+              <option>Budha</option>
+              <option>Kepercayaan</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="JENIS-KELAMIN">JENIS KELAMIN</label>
+          </div>
+          <div class="inputan jnsklmn">
+            <label class="radio"><input type="radio" name="jenis-kelamin" value="Laki-Laki">Laki-Laki</label>
+            <label class="radio"><input type="radio" name="jenis-kelamin" value="Perempuan">Perempuan</label>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="ALAMAT">ALAMAT</label>
+          </div>
+          <div class="inputan">
+            <textarea name="biografi" id="ALAMAT" style="height: 60px;" class="inp" placeholder="Alamat"></textarea>
+         </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="text">
+            <label for="UANGSAKUPERHARI">Uang Saku Per-Hari</label>
+          </div>
+          <div class="inputan">
+            <input type="number" class="inp" id="UANGSAKUPERHARI" onchange="ganti()" placeholder="RP. ">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="text">
+            <label>Total Uang Saku</label>
+          </div>
+          <div class="inputan">
+            <span id="TOTALUANGSAKU">RP. <span style="opacity: .5;">(Hasil Uang Saku Harian dikali 25)</span></span>
+          </div>
+        </div>
+
+        <div class="btn btn-hasil">
+          <input type="submit" onclick="kirim()" value="Kirim">
+          <input type="submit" onclick="batal()" value="Batal">
+        </div>
+        <p style="text-align: right;margin-right: 25%;font-family: Arial;font-size: .9em">
+      </form>
+    </main>
+    <footer>
+      <table id="data" class="data">
+        <thead>
+          <tr>
+            <th>NIS</th>
+            <th>NAMA</th>
+            <th>TEMPAT LAHIR</th>
+            <th>TANGGAL LAHIR</th>
+            <th>AGAMA</th>
+            <th>JENIS KELAMIN</th>
+            <th>ALAMAT</th>
+            <th>UANG SAKU HARIAN</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+      </table>
+    </footer>
+    <script src="js.js"></script>
+		</body>
+</html>
